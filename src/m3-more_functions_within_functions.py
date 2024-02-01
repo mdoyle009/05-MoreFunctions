@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -28,8 +28,26 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+import math
+
+def add(x, y):
+    addition = x + y
+    print(f"Addition: {addition}")
+def subtract(x, y):
+    subtraction = x - y
+    print(f"Subtraction: {subtraction}")
+def multiply(x, y):
+    multiplication = x * y
+    print(f"Multiplication: {multiplication}")
+def divide(x, y):
+    division = x / y
+    print(f"Division: {division}")
+def log(x, y):
+    logarithm = math.log(x, y)
+    print(f"Logarithm to base: {logarithm}")
+
 ###############################################################################
-# TODO: 2. (8 pts)
+# DONE: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -60,8 +78,21 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def main():
+    raw_number1 = input("Hello, Master Mathematician! What would you like to calculate?\nFirst number: ")
+    raw_number2 = input("Second number: ")
+    number1 = int(raw_number1)
+    number2 = int(raw_number2)
+    add(number1, number2)
+    subtract(number1, number2)
+    multiply(number1, number2)
+    divide(number1, number2)
+    log(number1, number2)
+    print("Have a nice day!")
+main()
+
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
+# DONE: 3. EXTRA CREDIT (4 pts)
 #
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this

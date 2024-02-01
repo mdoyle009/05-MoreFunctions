@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   Arbitrary arguments may not be something that you end up using all that
 #   often and we may not use them often in this class, but I wanted to make
@@ -24,7 +24,7 @@ def roll_call(*name):
 roll_call("Matthew", "Mark", "Luke", "John")
 
 ###############################################################################
-# TODO: 2. (3 pts)
+# DONE: 2. (3 pts)
 #
 #   This time, let's create a function that uses arbitrary keyword arguments.
 #
