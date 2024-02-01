@@ -19,6 +19,10 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def roll_call(*name):
+    print(name)
+roll_call("Matthew", "Mark", "Luke", "John")
+
 ###############################################################################
 # TODO: 2. (3 pts)
 #
@@ -36,3 +40,7 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+def pet_bio(**info):
+    print(f"{info["name"]} is a {info["species"]} and {info["age"]} years old.")
+pet_bio(species="bunny", age="7", name="Harlow")
